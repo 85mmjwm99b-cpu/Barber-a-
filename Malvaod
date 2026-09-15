@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malvado Barbershot</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: white;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px 20px;
+      background: radial-gradient(circle at top, #292929, #0b0b0b 60%);
+    }
+
+    .hero {
+      max-width: 700px;
+    }
+
+    .logo {
+      color: #aaa;
+      letter-spacing: 5px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin-bottom: 18px;
+    }
+
+    h1 span,
+    .gold {
+      color: #d4af37;
+    }
+
+    .subtitle {
+      color: #bbb;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .principal {
+      background: #d4af37;
+      color: #111;
+    }
+
+    .secundario {
+      border: 1px solid #555;
+      color: white;
+    }
+
+    section {
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .titulo {
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .tarjetas {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .tarjeta {
+      background: #151515;
+      border: 1px solid #292929;
+      border-radius: 15px;
+      padding: 30px 20px;
+    }
+
+    .tarjeta h3 {
+      color: #d4af37;
+      margin-bottom: 12px;
+    }
+
+    .tarjeta p {
+      color: #bbb;
+      line-height: 1.6;
+    }
+
+    .cita {
+      background: #111;
+    }
+
+    .caja {
+      max-width: 600px;
+      margin: auto;
+      background: #181818;
+      padding: 35px 20px;
+      border-radius: 18px;
+      border: 1px solid #292929;
+    }
+
+    .caja p {
+      color: #ccc;
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #080808;
+      color: #777;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+
+      <div class="logo">BARBERÍA PREMIUM</div>
+
+      <h1>
+        MALVADO <span>BARBERSHOT</span>
+      </h1>
+
+      <p class="subtitle">
+        Estilo, precisión y calidad en cada corte.
+        Tu imagen habla por ti.
+      </p>
+
+      <div class="buttons">
+
+        <a class="btn principal"
+           href="https://wa.me/18095067228?text=Hola%20Malvado%20Barbershot%2C%20quiero%20reservar%20una%20cita."
+           target="_blank">
+          💬 Enviar un mensaje
+        </a>
+
+        <a class="btn secundario"
+           href="https://wa.me/18095067228?text=Hola%2C%20quiero%20reservar%20mi%20cita%20en%20Malvado%20Barbershot."
+           target="_blank">
+          📅 Reservar tu cita
+        </a>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <section>
+
+    <h2 class="titulo">
+      ¿Por qué <span class="gold">Malvado?</span>
+    </h2>
+
+    <div class="tarjetas">
+
+      <div class="tarjeta">
+        <h3>✂️ Calidad</h3>
+        <p>
+          Cada detalle cuenta. Trabajamos para que
+          tu corte quede como tú quieres.
+        </p>
+      </div>
+
+      <div class="tarjeta">
+        <h3>🔥 Estilo</h3>
+        <p>
+          Encuentra tu estilo y sal con una imagen
+          que te represente.
+        </p>
+      </div>
+
+      <div class="tarjeta">
+        <h3>💈 Profesionalismo</h3>
+        <p>
+          Atención y dedicación en cada servicio.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="cita">
+
+    <h2 class="titulo">
+      <span class="gold">Reserva tu cita</span>
+    </h2>
+
+    <div class="caja">
+
+      <p>
+        🕐 <strong>Horario</strong><br>
+        10:00 AM - 8:30 PM
+      </p>
+
+      <p>
+        💬 Escríbenos directamente por WhatsApp
+        para consultar disponibilidad y reservar.
+      </p>
+
+      <a class="btn principal"
+         href="https://wa.me/18095067228?text=Hola%20Malvado%20Barbershot%2C%20quiero%20reservar%20una%20cita."
+         target="_blank">
+        📅 Reservar mi cita
+      </a>
+
+      <br><br>
+
+      <a class="btn secundario"
+         href="https://www.instagram.com/malvado_berbershot/"
+         target="_blank">
+        📸 Instagram
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+    © 2026 Malvado Barbershot
+  </footer>
+
+</body>
+</html>
