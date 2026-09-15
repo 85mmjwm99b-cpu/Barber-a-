@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Malvado Barbershot | Barbería</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: white;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px 20px;
+      background:
+        radial-gradient(circle at top, #292929 0%, #0b0b0b 55%);
+    }
+
+    .hero {
+      max-width: 700px;
+    }
+
+    .logo {
+      font-size: 18px;
+      letter-spacing: 5px;
+      color: #aaa;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 52px;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+    }
+
+    h1 span {
+      color: #d4af37;
+    }
+
+    .subtitle {
+      color: #bbb;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-main {
+      background: #d4af37;
+      color: #111;
+    }
+
+    .btn-main:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-secondary {
+      border: 1px solid #555;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: #222;
+    }
+
+    section {
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .section-title span {
+      color: #d4af37;
+    }
+
+    .cards {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #151515;
+      border: 1px solid #292929;
+      border-radius: 15px;
+      padding: 30px 20px;
+    }
+
+    .card h3 {
+      color: #d4af37;
+      margin-bottom: 12px;
+      font-size: 21px;
+    }
+
+    .card p {
+      color: #bbb;
+      line-height: 1.6;
+    }
+
+    .contact {
+      background: #111;
+    }
+
+    .contact-box {
+      max-width: 600px;
+      margin: auto;
+      background: #181818;
+      padding: 35px 20px;
+      border-radius: 18px;
+      border: 1px solid #292929;
+    }
+
+    .contact-box p {
+      margin: 15px 0;
+      color: #ccc;
+      font-size: 17px;
+    }
+
+    .contact-box a {
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      background: #080808;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 38px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+
+      <div class="logo">Barbería Premium</div>
+
+      <h1>
+        MALVADO <span>BARBERSHOT</span>
+      </h1>
+
+      <p class="subtitle">
+        Estilo, precisión y calidad en cada corte.
+        Tu imagen habla por ti.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-main" href="tel:+18095067228">
+          📞 Llamar ahora
+        </a>
+
+        <a class="btn btn-secondary"
+           href="https://www.instagram.com/malvado_berbershot/"
+           target="_blank">
+          Instagram
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+
+  <section>
+    <h2 class="section-title">
+      ¿Por qué <span>Malvado?</span>
+    </h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>✂️ Calidad</h3>
+        <p>
+          Trabajamos cada detalle para que salgas
+          con un corte que te represente.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🔥 Estilo</h3>
+        <p>
+          Un espacio pensado para que encuentres
+          tu propio estilo.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>💈 Profesionalismo</h3>
+        <p>
+          Atención y dedicación en cada servicio.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="contact">
+
+    <h2 class="section-title">
+      <span>Visítanos</span>
+    </h2>
+
+    <div class="contact-box">
+
+      <p>
+        🕐 <strong>Horario</strong><br>
+        Lunes a Domingo · 10:00 AM - 8:30 PM
+      </p>
+
+      <p>
+        📱 <strong>Teléfono</strong><br>
+        <a href="tel:+18095067228">
+          809-506-7228
+        </a>
+      </p>
+
+      <p>
+        📸 <strong>Instagram</strong><br>
+        <a href="https://www.instagram.com/malvado_berbershot/"
+           target="_blank">
+          @malvado_berbershot
+        </a>
+      </p>
+
+      <br>
+
+      <a class="btn btn-main"
+         href="https://www.instagram.com/malvado_berbershot/"
+         target="_blank">
+        Ver Instagram
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+    © 2026 Malvado Barbershot · Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
